@@ -60,4 +60,14 @@ public class DragTrail : MonoBehaviour
             Debug.Log("Drag End");
         }
     }
+    void OnDisable()
+    {
+        // 해당 오브젝트가 비활성화될 때 모든 trail을 제거
+        if (currentTrail != null)
+        {
+            Destroy(currentTrail);
+            Debug.Log("Object Disabled, Destroyed Trail");
+        }
+    }
+
 }

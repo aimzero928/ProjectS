@@ -16,7 +16,7 @@ public class MonsterController : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (player != null)
         {
